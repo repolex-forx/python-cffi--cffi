@@ -1,0 +1,71 @@
+[2026-04-13T07:53:21Z] === ENRICH ITERATION 1 START | repo=python-cffi/cffi sha=6366c01d ===
+[2026-04-13T07:53:21Z] [iter=1] PHASE START: enrich repo=python-cffi/cffi sha=6366c01d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6366c01d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6366c01d84e9a78e7e85f12ebe9760ba5d19b6d3.nq.gz
+[2026-04-13T07:53:22Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-13T07:53:39Z] [iter=1] AST store loaded triples=2207355 load_secs=16 mem_mb=883 MB
+[2026-04-13T07:53:39Z] [iter=1] Step 2: Finding LSP targets mem_mb=883 MB
+[2026-04-13T07:53:43Z] [iter=1] LSP targets found call_sites=20024 imports=677 extends=106 implements=0 secs=4
+[2026-04-13T07:53:46Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=883 MB
+[2026-04-13T07:53:59Z] [iter=1] Position index built positions=145479 nodes_with_types=189182 secs=13 mem_mb=883 MB
+[2026-04-13T07:53:59Z] [iter=1] Step 3: Starting LSP resolution mem_mb=883 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T07:53:59Z] [iter=1] Resolving target type target_type=call_site count=20024
+[2026-04-13T07:54:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=src/cffi/vengine_cpy.py
+[2026-04-13T07:58:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=1 resolved=86 errors=292 current=testing/cffi1/test_new_ffi_1.py
+[2026-04-13T08:07:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=2 resolved=356 errors=937 current=src/c/test_c.py
+[2026-04-13T08:13:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.2 files_done=3 resolved=1074 errors=1312 current=testing/cffi0/test_verify.py
+[2026-04-13T08:26:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.1 files_done=4 resolved=1281 errors=2210 current=src/cffi/model.py
+[2026-04-13T08:28:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=5 resolved=1322 errors=2319 current=testing/cffi1/test_verify1.py
+[2026-04-13T08:40:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.2 files_done=6 resolved=1500 errors=3194 current=testing/cffi0/backend_tests.py
+[2026-04-13T08:53:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.0 files_done=7 resolved=1779 errors=4084 current=testing/cffi0/test_parsing.py
+[2026-04-13T08:54:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.5 files_done=8 resolved=1842 errors=4191 current=testing/cffi1/test_ffi_obj.py
+[2026-04-13T08:57:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.1 files_done=9 resolved=1919 errors=4372 current=demo/_curses.py
+[2026-04-13T09:01:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.3 files_done=10 resolved=1974 errors=4662 current=src/cffi/api.py
+[2026-04-13T09:03:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.4 files_done=11 resolved=2088 errors=4809 current=src/cffi/recompiler.py
+[2026-04-13T09:10:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.4 files_done=12 resolved=2256 errors=5299 current=src/cffi/vengine_gen.py
+[2026-04-13T09:13:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.3 files_done=13 resolved=2324 errors=5503 current=testing/cffi1/test_recompiler.py
+[2026-04-13T09:26:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.4 files_done=14 resolved=2461 errors=6406 current=testing/cffi0/test_zintegration.py
+[2026-04-13T09:30:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.1 files_done=16 resolved=2563 errors=6664 current=testing/cffi1/test_parse_c_type.py
+[2026-04-13T09:34:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.2 files_done=17 resolved=2613 errors=6952 current=testing/cffi0/snippets/setuptools_package_2/snip_setuptools_verify2/__init__.py
+[2026-04-13T09:38:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.6 files_done=19 resolved=2733 errors=7191 current=testing/cffi1/test_function_args.py
+[2026-04-13T09:38:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.6 files_done=20 resolved=2775 errors=7259 current=testing/cffi1/test_zdist.py
+[2026-04-13T09:40:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.0 files_done=21 resolved=2851 errors=7355 current=src/cffi/verifier.py
+[2026-04-13T09:41:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.8 files_done=22 resolved=2892 errors=7414 current=demo/api.py
+[2026-04-13T09:42:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.7 files_done=24 resolved=2913 errors=7474 current=testing/embedding/test_basic.py
+[2026-04-13T09:42:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.5 files_done=25 resolved=2953 errors=7532 current=src/cffi/pkgconfig.py
+[2026-04-13T09:43:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=27 resolved=2974 errors=7571 current=testing/cffi1/test_re_python.py
+[2026-04-13T09:47:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.6 files_done=30 resolved=3068 errors=7819 current=testing/cffi0/test_zdistutils.py
+[2026-04-13T09:48:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.7 files_done=31 resolved=3104 errors=7894 current=testing/cffi0/test_ownlib.py
+[2026-04-13T09:49:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.7 files_done=32 resolved=3149 errors=7964 current=demo/cffi-cocoa.py
+[2026-04-13T09:50:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.9 files_done=33 resolved=3149 errors=8046 current=testing/cffi0/test_model.py
+[2026-04-13T09:50:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.6 files_done=34 resolved=3149 errors=8097 current=src/cffi/backend_ctypes.py
+[2026-04-13T09:53:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.1 files_done=35 resolved=3420 errors=8269 current=testing/cffi1/test_realize_c_type.py
+[2026-04-13T09:54:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.7 files_done=38 resolved=3448 errors=8307 current=demo/gmp.py
+[2026-04-13T09:54:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.2 files_done=41 resolved=3474 errors=8347 current=testing/cffi1/test_pkgconfig.py
+[2026-04-13T09:55:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.0 files_done=45 resolved=3522 errors=8399 current=testing/embedding/empty.py
+[2026-04-13T09:55:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.6 files_done=50 resolved=3570 errors=8440 current=testing/cffi1/test_unicode_literals.py
+[2026-04-13T09:56:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.1 files_done=54 resolved=3587 errors=8480 current=demo/readdir.py
+[2026-04-13T09:57:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.9 files_done=57 resolved=3622 errors=8536 current=src/cffi/cffi_opcode.py
+[2026-04-13T09:57:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.6 files_done=61 resolved=3663 errors=8580 current=testing/embedding/test_thread.py
+[2026-04-13T09:58:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.2 files_done=64 resolved=3687 errors=8626 current=testing/cffi0/snippets/setuptools_module/snip_setuptools_verify.py
+[2026-04-13T09:59:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.8 files_done=70 resolved=3732 errors=8664 current=testing/cffi0/test_ctypes.py
+[2026-04-13T09:59:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.3 files_done=79 resolved=3771 errors=8700 current=demo/readdir2_setup.py
+[2026-04-13T10:00:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.8 files_done=97 resolved=3790 errors=8735 current=testing/cffi0/snippets/distutils_module/setup.py
+[2026-04-13T10:00:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.4 files_done=117 resolved=3817 errors=8772 current=src/c/_cffi_backend.c
+[2026-04-13T10:08:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.3 files_done=118 resolved=3848 errors=9330 current=src/c/commontypes.c
+[2026-04-13T10:11:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.7 files_done=119 resolved=3848 errors=9498 current=src/c/parse_c_type.c
+[2026-04-13T10:12:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=120 resolved=3909 errors=9617 current=src/c/ffi_obj.c
+[2026-04-13T10:13:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.5 files_done=121 resolved=3909 errors=9693 current=src/c/cffi1_module.c
+[2026-04-13T10:14:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.1 files_done=124 resolved=3921 errors=9735 current=src/c/realize_c_type.c
+[2026-04-13T10:15:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.2 files_done=125 resolved=3921 errors=9812 current=src/c/misc_thread_common.h
+[2026-04-13T10:16:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.1 files_done=128 resolved=3935 errors=9877 current=src/c/libffi_x86_x64/ffi.c
+[2026-04-13T10:17:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.7 files_done=132 resolved=3962 errors=9920 current=src/c/misc_win32.h
+[2026-04-13T10:17:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.5 files_done=139 resolved=3972 errors=9972 current=testing/embedding/tlocal-test.c
+[2026-04-13T10:18:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.0 files_done=146 resolved=3987 errors=10009 current=demo/embedding_test.c
+[2026-04-13T10:18:43Z] [iter=1] Target type resolved target_type=call_site resolved=4014 errors=10034 secs=8684 mem_mb=883 MB
+[2026-04-13T10:18:43Z] [iter=1] Resolving target type target_type=import_statement count=677
+[2026-04-13T10:18:52Z] [iter=1] Target type resolved target_type=import_statement resolved=464 errors=0 secs=9 mem_mb=883 MB
+[2026-04-13T10:18:52Z] [iter=1] Resolving target type target_type=extends_clause count=106
+[2026-04-13T10:18:53Z] [iter=1] HEARTBEAT target_type=extends_clause elapsed_min=145.5 files_done=0 resolved=0 errors=0 current=src/c/test_c.py
+[2026-04-13T10:18:55Z] [iter=1] Target type resolved target_type=extends_clause resolved=103 errors=0 secs=3 mem_mb=883 MB
+[2026-04-13T10:19:04Z] [iter=1] Step 5: Writing final enrichment file triples=116497
+[2026-04-13T10:19:06Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/6366c01d84e9a78e7e85f12ebe9760ba5d19b6d3.nq.gz size_kb=2313
+[2026-04-13T10:19:06Z] [iter=1] PHASE END: enrich elapsed_s=8745 elapsed_min=145.7 total_triples=116497
